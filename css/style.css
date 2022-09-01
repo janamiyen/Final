@@ -56,6 +56,7 @@ nav{
 
 .imgLogo{
     width: 100px;
+    cursor: pointer;
 }
 
 .container {
@@ -96,7 +97,6 @@ nav{
     z-index: 2;
     overflow: visible;
     overflow-y: scroll;
-
 }
 
 #btn-menu:checked ~ .container-menu{
@@ -105,6 +105,9 @@ nav{
 }
 
 .cont-menu{
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
@@ -153,6 +156,9 @@ h3{
     margin: auto;
     padding: 3px 0;
     text-shadow: 2px 2px 10px white;
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
 }
 
 .carrito{
@@ -169,12 +175,27 @@ h3{
   }
 
 .bienvenida {
-    padding: 60px 0 80px ;
+    width: 100%;
+    top: 25px;
+    padding: 0px 0 80px ;
     text-align: center;
     color: white;
     font-size: 50px;
     text-shadow: 2px 2px 10px white;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+}
+.swal2-modal, .swal2-show-shown, .toastify{
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
+}
+
+.banner{
+    border-radius: 20px;
+    padding:10px;
+    max-height: 80%;
 }
 
 .resultado{
@@ -195,17 +216,24 @@ h3{
 .img-carrito {
     width: 25px;
 }
-
+.eliminarImagen{
+    width: 15px;
+    margin: auto;
+}
 .boton-eliminar {
+    align-items: left; 
+    width: 20px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
     border: none;
     border-radius: 6px;
-    padding: 5px;
-    background-color: red;
+    background-color: #000090;
     text-align: center;
     font-size: 12px;
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
 }
 
 .vaciar{
@@ -213,6 +241,7 @@ h3{
 }
 
 .tarjetas {
+    margin-top: 20px;
     color: #fff;
     width: 300px;
     border-radius: 6px;
@@ -235,6 +264,9 @@ h3{
     font-size: 18px;
     font-weight: bold;
     opacity: 0.9;
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
 }
   
 .boton:hover{
@@ -258,6 +290,9 @@ h3{
     padding: 5px 0;
     text-shadow: 2px 2px 10px white;
     border-radius: 10px;
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
 }
 
 td {
@@ -290,7 +325,10 @@ td {
     font-size: 18px;
     font-weight: bold;
     opacity: 0.9;
-    }
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
+}
 
 .botonComprar {
     color: #fff;
@@ -304,6 +342,9 @@ td {
     font-size: 18px;
     font-weight: bold;
     opacity: 0.9;
+    border-radius: 6px;
+    border: solid 1px #000090;
+    box-shadow: 0 0 30px #000090;
 }
 
 .imagenCarrito{
@@ -403,7 +444,11 @@ td {
     grid-template-columns: 7fr 2fr;
 }
 
- 
+.swal2-confirm, .swal2-styled {
+    background-color: #000090 !important;
+    border: solid 1px #000090!important;
+    box-shadow: 0 0 30px #000090!important;
+} 
   
 @media (max-width: 1400px) {
      
@@ -411,6 +456,18 @@ td {
     display: grid;
     gap: 20px 20px;
     grid-template-columns: auto auto auto;
+    }
+
+    .bienvenida {
+        width: 100%;
+        padding: 60px 0 80px ;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 10px white;
+        z-index: 0;
+        position: relative;
+        margin: 0 auto;
     }
 }
 
